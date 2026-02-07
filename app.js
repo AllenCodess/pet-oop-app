@@ -21,3 +21,8 @@ const pet = {
     return (this.name + " 's " + this.hunger + "| Happiness: " + this, this.happiness);
   },
 };
+
+// get dom elements
+const feedBtnEl = document.getElementById("feedbtn");
+const playBtnEl = document.getElementById("playbtn");
+const statusEl = document.getElementById("status");
