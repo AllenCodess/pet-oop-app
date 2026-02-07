@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(
+    113deg,
+    rgba(204, 140, 51, 0.04) 0%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 172, 71, 1) 0%,
+    rgba(245, 31, 27, 1) 100%,
+    rgba(227, 54, 11, 1) 50%
+  );
+  height: 100vh;
+}
+
 .container {
   max-width: 1250px;
   width: 90%;
@@ -16,6 +28,8 @@
   border-radius: 8px;
   width: 30%;
   margin: 10rem auto;
+  background-color: #1ecc58;
+  -webkit-box-shadow: 0px 4px 15px 1px #000000;
 }
 
 .text-container {
@@ -57,4 +71,6 @@
   padding: 0.5rem 1rem;
   font-weight: 600;
   border-radius: 6px;
+  background-color: #5a69f5;
+  color: white;
 }
