@@ -18,7 +18,7 @@ const pet = {
   },
 
   getStatus: function () {
-    return (this.name + " 's " + this.hunger + "| Happiness: " + this, this.happiness);
+    return this.name + "'s Hunger: " + this.hunger + " | Happiness: " + this.happiness;
   },
 };
 
@@ -26,3 +26,21 @@ const pet = {
 const feedBtnEl = document.getElementById("feedbtn");
 const playBtnEl = document.getElementById("playbtn");
 const statusEl = document.getElementById("status");
+
+// create functions
+
+feedBtnEl.addEventListener("click", function () {
+  updateStatus();
+  pet.feed();
+});
+
+playBtnEl.addEventListener("click", function () {
+  updateStatus();
+  pet.play();
+});
+
+updateStatus();
+
+function updateStatus() {
+  statusEl.textContent = pet.getStatus();
+}
